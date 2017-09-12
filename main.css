@@ -1,0 +1,81 @@
+body{
+  background-image: url(bkgnd.jpg);
+  font-family: sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.pokemon{
+  background: rgba(0, 0, 0, .5);
+  color: white;
+  margin: 5%;
+  border-radius: 5px;
+  vertical-align: top;
+  display: flex;
+}
+.pokemon div{
+  flex:3;
+  margin-left: 10px;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  /*float: right;*/
+  /*flex:1;*/
+  justify-content: space-between;
+}
+
+#load{
+  z-index: 20;
+  position: absolute;
+  right: 43.5%;
+  bottom: 33%;
+
+  animation-name: spin;
+   animation-duration: 2000ms;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes spin {
+      from {
+          transform: rotate(0deg);
+      } to {
+          transform: rotate(360deg);
+      }
+    }
+.heading{
+  background: rgba(0, 0, 0, .8);
+  color: white;
+
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+#logo{
+  font-size: 30px;
+  margin: 0;
+  margin-top: .5em;
+  flex: 3;
+}
+
+#search{
+ width: 15%;
+ min-width: 123px;
+ height: 20px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+#btn{
+  width: 60px;
+  height: 25.6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
